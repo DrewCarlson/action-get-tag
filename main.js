@@ -20,7 +20,7 @@ async function main() {
     core.setOutput("tag", tag);
   }
   catch (error) {
-    // ignored
+    core.setOutput("tag", "");
   }
 }
 
