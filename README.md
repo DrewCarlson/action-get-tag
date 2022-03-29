@@ -1,6 +1,6 @@
-# Get tag or empty string Github Action
+# Get tag or nothing Github Action
 
-Simple Action that have only one responsibility - output tag name (parsed from `GITHUB_REF` environment variable) or an empty string.
+Simple Action that have only one responsibility - output tag name (parsed from `GITHUB_REF` environment variable) or nothing.
 
 ## Usage
 
