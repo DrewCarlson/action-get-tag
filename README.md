@@ -1,10 +1,10 @@
-# Get tag Github Action
+# Get tag or empty string Github Action
 
-Simple Action that have only one responsibility - output tag name (parsed from `GITHUB_REF` environment variable).
+Simple Action that have only one responsibility - output tag name (parsed from `GITHUB_REF` environment variable) or an empty string.
 
 ## Usage
 
-Should be used only when actual tag is pushed, otherwise the Action will exit with an error.
+Should be used only when actual tag is pushed, otherwise the Action will have no output.
 
 ```yaml
 on:
@@ -16,7 +16,7 @@ on:
 ```yaml
 - name: Get tag
   id: tag
-  uses: dawidd6/action-get-tag@v1
+  uses: DrewCarlson/action-get-tag@v1
   with:
     # Optionally strip `v` prefix
     strip_v: true
