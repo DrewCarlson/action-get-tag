@@ -4,6 +4,10 @@ branding:
   icon: tag
   color: gray-dark
 inputs:
+  env_var_name:
+    required: false
+    default: 'VERSION'
+    description: Environment variable to export the version tag to
   strip_v:
     required: false
     default: false
